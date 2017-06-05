@@ -2,20 +2,30 @@
    Components/Buttons
    ======================= */
 .c-button {
+  text-align: center;
+
+  @include mq($from: desktop) {
+    text-align: left;
+  }
 }
 
-  .c-button__button {
+  .c-button__link {
     background-color: color(black);
-    border: 3px solid color(black);
+    border: 3px solid color(black) !important;
+    color: color(white);
     cursor: pointer;
     display: inline-block;
     max-width: 100%;
     outline: none;
     padding: $unit-small $unit-large;
     position: relative;
+    text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     transition: all .2s;
     width: 100%;
+    @include font-family(bold);
+    @include font-size(14px);
 
     @include mq($from: tablet) {
       max-width: 480px;
@@ -28,29 +38,6 @@
 
     &:hover {
       background-color: #F1EBDB;
-    }
-
-    &:hover .c-button__text,
-    &:hover .c-button__angle-right {
       color: color(black)
     }
   }
-
-    .c-button__text,
-    .c-button__angle-right {
-      color: color(white);
-      transition: all .2s;
-    }
-
-    .c-button__text {
-      display: inline-block;
-      text-align: center;
-      text-transform: uppercase;
-      @include font-family(bold);
-      @include font-size(14px);
-    }
-
-    .c-button__angle-right {
-      margin-right: $unit-small;
-      @include font-size(20px);
-    }

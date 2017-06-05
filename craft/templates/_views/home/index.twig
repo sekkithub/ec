@@ -18,7 +18,10 @@
           When an unknown printer took a galley of type and scrambled it to make a type specimen book.
         </p>
       </div>
-      {% include '_components/button' %}
+      {% include '_components/button' with {
+        linkUrl: '/shop',
+        buttonText: 'Shop',
+      } %}
     </div>
   </div>
 {% endblock %}
