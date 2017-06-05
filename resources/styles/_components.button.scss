@@ -11,13 +11,13 @@
 
   .c-button__link {
     background-color: color(black);
-    border: 3px solid color(black) !important;
+    border: 2px solid color(black) !important;
     color: color(white);
     cursor: pointer;
     display: inline-block;
     max-width: 100%;
     outline: none;
-    padding: $unit-small $unit-large;
+    padding: 10px $unit-large;
     position: relative;
     text-align: center;
     text-decoration: none;
