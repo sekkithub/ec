@@ -1,0 +1,33 @@
+/* =======================
+   Utilities/Constrain
+   ======================= */
+
+.u-constrain {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+}
+
+.u-constrain--large {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+}
+
+.u-constrain--huge {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+}
+
+.u-constrain--small {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+}
+
+.u-constrain--tiny {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+}

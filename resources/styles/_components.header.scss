@@ -1,0 +1,19 @@
+/* =======================
+   Components/Header
+   ======================= */
+.c-header {
+  padding-bottom: $unit;
+  padding-top: $unit;
+}
+
+  .c-header__content {
+    @include mq($from: tablet) {
+      display: flex;
+      justify-content: space-between;
+      @include font-size(24px);
+    }
+  }
+
+    .c-header__logo-link {
+      border-bottom: none;
+    }

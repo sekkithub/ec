@@ -1,0 +1,14 @@
+/* =======================
+   Components/Footer
+   ======================= */
+.c-footer {
+  padding-bottom: $unit;
+  padding-top: $unit;
+}
+
+  .c-footer__content {
+    @include mq($from: desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }

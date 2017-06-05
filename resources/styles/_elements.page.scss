@@ -1,0 +1,17 @@
+/* =======================
+   Elements/Page
+   ======================= */
+
+html, body {
+  height: 100%;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  @include font-family(book);
+}
+
+body {
+  background-color: #F1EBDB;
+}

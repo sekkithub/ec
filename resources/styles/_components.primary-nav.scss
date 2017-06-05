@@ -1,0 +1,30 @@
+/* =======================
+  Components/Primary Nav
+  ======================= */
+
+.c-primary-nav {
+}
+
+  .c-primary-nav__list {
+    margin-bottom: 0;
+  }
+
+    .c-primary-nav__item {
+      margin-right: $unit-large;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+      .c-primary-nav__link {
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+          border-bottom: 2px solid color(black);
+        }
+
+        &.active {
+          border-bottom-color: color(black);
+        }
+      }

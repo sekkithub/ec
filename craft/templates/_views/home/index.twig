@@ -1,0 +1,24 @@
+{% extends (craft.request.isAjax and not craft.request.isLivePreview) ? "_ajax-layout" : "_layout" %}
+
+{% set seomaticSiteMeta = seomaticSiteMeta|merge({
+'title': siteName,
+'siteSeoTitlePlacement': ''
+}) %}
+
+{% block content %}
+  <div class="o-layout  o-layout--flush  o-layout--middle">
+    <div class="o-layout__item  u-1/2@desktop">
+      <img src="/images/test2.jpg" class="" alt="" />
+    </div>
+    <div class="o-layout__item  u-1/2@desktop  u-pull-1/30@desktop">
+      <h1 class="o-heading">This is The Neighbourhood Base Craft</h1>
+      <div class="o-body">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          When an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+      </div>
+      {% include '_components/button' %}
+    </div>
+  </div>
+{% endblock %}

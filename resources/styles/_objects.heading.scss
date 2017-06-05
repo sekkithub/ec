@@ -1,0 +1,8 @@
+/* =======================
+   Objects/Heading
+   ======================= */
+
+.o-heading {
+  @include font-family(book);
+  @include font-size(45px, 1.2);
+}

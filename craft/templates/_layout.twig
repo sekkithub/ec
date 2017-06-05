@@ -1,0 +1,19 @@
+{% minify %}
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  {% hook 'seomaticRender' %}
+  <link rel="stylesheet" href="/styles/main.css" media="screen, projection"/>
+</head>
+
+<body data-section="{{ (entry.section is defined and entry.section.handle is defined) ? entry.section.handle : 'generic' }}">
+{% include '_components/header' %}
+<div class="c-container  js-container">
+  {% block content %}
+  {% endblock %}
+</div>
+{% include '_components/footer' %}
+<script src="/scripts/main.js"></script>
+</body>
+</html>
+{% endminify %}

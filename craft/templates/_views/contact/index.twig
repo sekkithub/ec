@@ -1,0 +1,7 @@
+{% extends (craft.request.isAjax and not craft.request.isLivePreview) ? "_ajax-layout" : "_layout" %}
+
+{% block content %}
+  <div class="o-wrapper-large">
+    <h1 class="o-heading">{{ entry.title }}</h1>
+  </div>
+{% endblock %}
