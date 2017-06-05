@@ -23,7 +23,7 @@ return array(
 
     '.dev' => array(
         'devMode' => true,
-        'siteUrl' => 'http://base-craft.dev',
+        'siteUrl' => 'http://ec.dev',
         'environment' => 'dev'
     ),
 

@@ -12,25 +12,25 @@ $dev = array(
     'server' => 'localhost',
     'user' => 'root',
     'password' => '',
-    'database' => 'sample_dev');
+    'database' => 'ec_dev');
 
 $develop = array(
     'server' => 'localhost',
-    'user' => 'sample',
+    'user' => 'ec',
     'password' => '',
-    'database' => 'sample_dev');
+    'database' => 'ec_dev');
 
 $staging = array(
     'server' => 'localhost',
-    'user' => 'sample',
-    'password' => 'QBHLEHRzVsyD6vaI',
-    'database' => 'sample_staging');
+    'user' => 'ec',
+    'password' => '',
+    'database' => 'ec_staging');
 
 $production = array(
     'server' => 'localhost',
-    'user' => 'sample',
-    'password' => 'QBHLEHRzVsyD6vaI',
-    'database' => 'sample_production');
+    'user' => 'ec',
+    'password' => '',
+    'database' => 'ec_production');
 
 
 return array(
@@ -40,8 +40,7 @@ return array(
     '.dev' => $dev,
     'localhost' => $dev,
     '192.168.1' => $dev,
-    'sample.tnhdev.com' => $develop,
-    'sample.tnhstage.com' => $staging,
-    'sample.tnhprod.com' => $production,
-    'www.sample.com' => $production
+    'ec-dev.sekkithub.com' => $develop,
+    'ec-stage.sekkithub.com' => $staging,
+    'www.ec.com' => $production
 );
