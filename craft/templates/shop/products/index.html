@@ -25,10 +25,6 @@
                         {%- endfor -%}
                     </select>
 
-                    <select name="options[giftWrapped]">
-                        <option value="no">No gift wrap.</option>
-                        <option value="yes">Gift wrapped.</option>
-                    </select>
                     {% if product.unlimitedStock or (product.unlimitedStock == false and product.totalStock > 0 ) %}
                         <button type="submit">{{ "Add to cart"|t }}</button>
                     {% else %}
