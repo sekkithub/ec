@@ -17,13 +17,13 @@ $dev = array(
 $develop = array(
     'server' => 'localhost',
     'user' => 'ec',
-    'password' => '',
+    'password' => 'QZVGKzy2XsEurzx6',
     'database' => 'ec_dev');
 
 $staging = array(
     'server' => 'localhost',
     'user' => 'ec',
-    'password' => '',
+    'password' => 'QZVGKzy2XsEurzx6',
     'database' => 'ec_staging');
 
 $production = array(
